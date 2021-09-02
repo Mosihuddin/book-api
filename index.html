@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book api</title>
+    <!-- Bootstarp Css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+
+<div class="container">
+    <h2 class="text-center text-success">Search Book</h2>
+    <div class="row row-col-1">
+        <div class="col">
+            <div class="input-group mb-3 w-75 mx-auto mt-5">
+                <input id="input-field" type="text" class="form-control border-success py-3 shadow"
+                    placeholder="Search your favourite books..." />
+                <button class="btn btn-success" type="button" id="button-search">
+                    Search
+                </button>
+            </div>
+            <p class="text-center text-danger fs-2" id="result"></p>
+            <p class="text-center text-success fs-3" id="book-found">
+                <span id="resultFound"></span>
+            </p>
+        </div>
+    </div>
+    <!-- data-loader  -->
+    <style>
+        #spinner {
+            display: none;
+        }
+    </style>
+    <div class="image text-center mx-auto">
+        <img id="spinner" class="w-80 mx-auto" src="image/1.png" alt="" />
+    </div>
+</div>
+
+<!-- Display Books  -->
+<div class="container mt-5">
+    <div class="row row-cols-md-2" id="row"></div>
+</div>
+<!-- Bootstrap  script   -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+<!-- external script  -->
+<script src="js/api.js"></script>
+
+</body>
+
+</html>
